@@ -1,3 +1,3 @@
-# BOILERPLATE
+# TO DO Application
 
-Just a boilerplate to easily create web projects.
+A basic to-do app using Javascript [Jquery], CSS [Bootstrap] and HTML.
