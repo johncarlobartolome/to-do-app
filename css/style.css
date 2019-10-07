@@ -1,4 +1,201 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
+
+header {
+    background-color: #504658;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+.site-name {
+    user-select: none;
+    margin: 0;
+    color: #F0DECB;
+    font-weight: bolder;
+}
+
+.account a {
+    user-select: none;
+    padding: 5px;
+    color: #F0DECB;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.account .signup-btn {
+    border-radius: 5px;
+    background-color: #CE2E6C;
+}
+
+.view-selector {
+    display: flex;
+    padding: 20px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-selector button {
+    color: #504658;
+    padding: 5px 20px;
+    margin: 0 10px;
+    background-color: transparent;
+    border: 2px solid #504658;
+    ;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.view-selector .active {
+    background-color: #504658;
+    color: #F0DECB;
+}
+
+.date-navigation {
+    user-select: none;
+		position: relative;
+}
+
+.date-navigation .day-view {
+	visibility: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.date-navigation .week-view {
+		visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.week-view-btn {
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    color: #504658;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid #504658;
+}
+
+.btn-container .active {
+    background-color: #504658;
+    color: #F0DECB;
+}
+
+.date-nav-controls {
+    margin: 0 30px;
+}
+
+.current-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.current-date-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.week-span {
+    color: #504658;
+    margin: 8px 0;
+
+}
+
+.long-date {
+    margin: 0;
+    font-size: 16px;
+    color: #504658;
+    margin-bottom: -5px;
+}
+
+.current-day {
+    margin: 0;
+    font-size: 40px;
+    color: #504658;
+    font-weight: bold;
+}
+
+.input-box {
+    margin-top: 20px;
+    position: relative;
+}
+
+.form-add-item {
+    box-sizing: border-box;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.form-add-item input {
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+    width: 500px;
+    border: 2px solid #504658;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 20px;
+    padding: 0 10px;
+    color: #504658;
+}
+
+.form-add-item input::placeholder {
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+}
+
+.form-add-item button {
+    box-sizing: border-box;
+    border: 2px solid #504658;
+    background-color: #504658;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.item-container {
+    color: #504658;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (max-width: 575.98px) {
+    header {
+        padding: 10px 10px;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    ...
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+    ...
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
